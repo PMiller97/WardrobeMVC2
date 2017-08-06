@@ -165,8 +165,15 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccessoriesController.cs" />
+    <Compile Include="Controllers\AccessoryTypesController.cs" />
+    <Compile Include="Controllers\BottomsController.cs" />
+    <Compile Include="Controllers\BottomTypesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ShoesController.cs" />
+    <Compile Include="Controllers\ShoeTypesController.cs" />
     <Compile Include="Controllers\TopsController.cs" />
+    <Compile Include="Controllers\TopTypesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -288,6 +295,41 @@
     <Content Include="Views\Tops\Details.cshtml" />
     <Content Include="Views\Tops\Edit.cshtml" />
     <Content Include="Views\Tops\Index.cshtml" />
+    <Content Include="Views\TopTypes\Create.cshtml" />
+    <Content Include="Views\TopTypes\Delete.cshtml" />
+    <Content Include="Views\TopTypes\Details.cshtml" />
+    <Content Include="Views\TopTypes\Edit.cshtml" />
+    <Content Include="Views\TopTypes\Index.cshtml" />
+    <Content Include="Views\Bottoms\Create.cshtml" />
+    <Content Include="Views\Bottoms\Delete.cshtml" />
+    <Content Include="Views\Bottoms\Details.cshtml" />
+    <Content Include="Views\Bottoms\Edit.cshtml" />
+    <Content Include="Views\Bottoms\Index.cshtml" />
+    <Content Include="Views\BottomTypes\Create.cshtml" />
+    <Content Include="Views\BottomTypes\Delete.cshtml" />
+    <Content Include="Views\BottomTypes\Details.cshtml" />
+    <Content Include="Views\BottomTypes\Edit.cshtml" />
+    <Content Include="Views\BottomTypes\Index.cshtml" />
+    <Content Include="Views\Shoes\Create.cshtml" />
+    <Content Include="Views\Shoes\Delete.cshtml" />
+    <Content Include="Views\Shoes\Details.cshtml" />
+    <Content Include="Views\Shoes\Edit.cshtml" />
+    <Content Include="Views\Shoes\Index.cshtml" />
+    <Content Include="Views\ShoeTypes\Create.cshtml" />
+    <Content Include="Views\ShoeTypes\Delete.cshtml" />
+    <Content Include="Views\ShoeTypes\Details.cshtml" />
+    <Content Include="Views\ShoeTypes\Edit.cshtml" />
+    <Content Include="Views\ShoeTypes\Index.cshtml" />
+    <Content Include="Views\Accessories\Create.cshtml" />
+    <Content Include="Views\Accessories\Delete.cshtml" />
+    <Content Include="Views\Accessories\Details.cshtml" />
+    <Content Include="Views\Accessories\Edit.cshtml" />
+    <Content Include="Views\Accessories\Index.cshtml" />
+    <Content Include="Views\AccessoryTypes\Create.cshtml" />
+    <Content Include="Views\AccessoryTypes\Delete.cshtml" />
+    <Content Include="Views\AccessoryTypes\Details.cshtml" />
+    <Content Include="Views\AccessoryTypes\Edit.cshtml" />
+    <Content Include="Views\AccessoryTypes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
