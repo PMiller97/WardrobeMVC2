@@ -1,12 +1,14 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image: url('../images/bg3.jpg');
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    background-color:aqua;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -22,3 +24,14 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*Carousel*/
+.carousel-inner > .item > img { /*center my images in my carousel*/
+    margin: 0 auto;
+}
+
+/*Homepage*/
+.Lead {
+    text-align:center;
+}
+
