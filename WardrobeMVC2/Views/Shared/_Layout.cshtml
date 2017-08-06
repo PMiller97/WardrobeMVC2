@@ -8,7 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,7 +26,36 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div>*@
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Paige's Wardrobe</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Add New
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Top</a></li>
+                        <li><a href="#">Bottom</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Bottoms</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Create Outfit</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container body-content">
         @RenderBody()
         <hr />

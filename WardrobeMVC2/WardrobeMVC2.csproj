@@ -245,6 +245,12 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>MyWardrobe.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <Content Include="images\favoriteflannel.jpg" />
+    <Content Include="images\graytanktop.png" />
+    <Content Include="images\linkinparkhoodie.jpg" />
+    <Content Include="images\maroonvneck.jpg" />
+    <Content Include="images\moonphases.jpg" />
+    <Content Include="images\RHCPshirt.jpg" />
     <Content Include="Models\MyWardrobe.edmx.diagram">
       <DependentUpon>MyWardrobe.edmx</DependentUpon>
     </Content>

@@ -52,6 +52,14 @@ namespace WardrobeMVC2.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (top.TopTypeID.Equals(2))
+                {
+                    top.TopPhoto = "/images/RHCPshirt.jpg";
+                }
+                if (top.TopTypeID.Equals(2))
+                {
+                    top.TopPhoto = "/images/maroonvneck.jpg";
+                }
                 db.Tops.Add(top);
                 db.SaveChanges();
                 return RedirectToAction("Index");
