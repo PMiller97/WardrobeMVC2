@@ -10,28 +10,42 @@
 <body>
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
-            <div class="navbar-header">
+            <div class="navbar-header" style="font-family: 'Zilla Slab Highlight', cursive;">
                 <a class="navbar-brand" href="#">Paige's Wardrobe</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                @*First drop down*@
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Create New
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("Top Type", "Create", "TopTypes")</li>
+                        <li>@Html.ActionLink("Bottom Type", "Create", "BottomTypes")</li>
+                        <li>@Html.ActionLink("Shoe Type", "Create", "ShoeTypes")</li>
+                        <li>@Html.ActionLink("Accessory Type", "Create", "AccessoryTypes")</li>
+                    </ul>
+                @*Second drop down*@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         Add New
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Top</a></li>
-                        <li><a href="#">Bottom</a></li>
-                        <li><a href="#">Shoes</a></li>
-                        <li><a href="#">Accessories</a></li>
+                        <li>@Html.ActionLink("Top", "Create", "Tops")</li>
+                        <li>@Html.ActionLink("Bottom", "Create", "Bottoms")</li>
+                        <li>@Html.ActionLink("Shoes", "Create", "Shoes")</li>
+                        <li>@Html.ActionLink("Accessories", "Create", "Accessories")</li> 
                     </ul>
+                @*Navbar menu*@
                 </li>
-                <li><a href="#">Tops</a></li>
-                <li><a href="#">Bottoms</a></li>
-                <li><a href="#">Shoes</a></li>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Create Outfit</a></li>
+                <li>@Html.ActionLink("Tops", "Index", "Tops")</li>
+                <li>@Html.ActionLink("Bottoms", "Index", "Bottoms")</li>
+                <li>@Html.ActionLink("Shoes", "Index", "Shoes")</li> 
+                <li>@Html.ActionLink("Accessories", "Index", "Accessories")</li> 
             </ul>
         </div>
     </nav>

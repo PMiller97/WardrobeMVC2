@@ -4,18 +4,15 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Paiges Accessories ~</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.AccessoryName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.AccessoryPhoto)
+            @Html.DisplayNameFor(model => model.AccessoryType.TypeName)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.AccessoryColor)
@@ -26,9 +23,6 @@
         <th>
             @Html.DisplayNameFor(model => model.AccessoryOccasion)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessoryType.TypeName)
-        </th>
         <th></th>
     </tr>
 
@@ -38,7 +32,7 @@
             @Html.DisplayFor(modelItem => item.AccessoryName)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.AccessoryPhoto)
+            @Html.DisplayFor(modelItem => item.AccessoryType.TypeName)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.AccessoryColor)
@@ -50,10 +44,6 @@
             @Html.DisplayFor(modelItem => item.AccessoryOccasion)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.AccessoryType.TypeName)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.AccessoryID }) |
             @Html.ActionLink("Details", "Details", new { id=item.AccessoryID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.AccessoryID })
         </td>

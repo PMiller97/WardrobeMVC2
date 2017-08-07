@@ -222,10 +222,27 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\blackjeans.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\rsz_blackjeans.jpg" />
+    <Content Include="Content\rsz_combatboots.jpg" />
+    <Content Include="Content\rsz_converse.jpg" />
+    <Content Include="Content\rsz_darkjeans.jpg" />
+    <Content Include="Content\rsz_favoriteflannel.jpg" />
+    <Content Include="Content\rsz_graytanktop.png" />
+    <Content Include="Content\rsz_grayvans.jpg" />
+    <Content Include="Content\rsz_leatherbelt.jpg" />
+    <Content Include="Content\rsz_linkinparkhoodie.jpg" />
+    <Content Include="Content\rsz_maroonvneck.jpg" />
+    <Content Include="Content\rsz_moonphases.jpg" />
+    <Content Include="Content\rsz_neffbeanie.jpg" />
+    <Content Include="Content\rsz_nikeslipons.jpg" />
+    <Content Include="Content\rsz_rhcpshirt.jpg" />
+    <Content Include="Content\rsz_rippedgreenshorts.jpg" />
+    <Content Include="Content\rsz_zeldaleggings.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -247,12 +264,6 @@
     </EntityDeploy>
     <Content Include="images\bg3.jpg" />
     <Content Include="images\carousel4.jpg" />
-    <Content Include="images\favoriteflannel.jpg" />
-    <Content Include="images\graytanktop.png" />
-    <Content Include="images\linkinparkhoodie.jpg" />
-    <Content Include="images\maroonvneck.jpg" />
-    <Content Include="images\moonphases.jpg" />
-    <Content Include="images\RHCPshirt.jpg" />
     <Content Include="images\rsz_carouselimage2.jpg" />
     <Content Include="images\rsz_carouselimage3.jpg" />
     <Content Include="Models\MyWardrobe.edmx.diagram">

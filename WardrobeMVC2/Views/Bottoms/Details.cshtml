@@ -19,11 +19,11 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.BottomPhoto)
+            @Html.DisplayNameFor(model => model.BottomType.TypeName)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.BottomPhoto)
+            @Html.DisplayFor(model => model.BottomType.TypeName)
         </dd>
 
         <dt>
@@ -50,17 +50,8 @@
             @Html.DisplayFor(model => model.BottomOccasion)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.BottomType.TypeName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BottomType.TypeName)
-        </dd>
-
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

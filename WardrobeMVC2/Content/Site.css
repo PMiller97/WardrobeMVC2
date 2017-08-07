@@ -2,6 +2,7 @@
     padding-top: 50px;
     padding-bottom: 20px;
     background-image: url('../images/bg3.jpg');
+    font-family: 'Anton', sans-serif;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -9,6 +10,7 @@
     padding-left: 15px;
     padding-right: 15px;
     background-color:aqua;
+    font-family: 'Anton', sans-serif;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
