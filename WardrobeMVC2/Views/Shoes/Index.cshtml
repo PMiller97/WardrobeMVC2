@@ -6,48 +6,28 @@
 
 <h2>Paiges Shoes ~</h2>
 
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.ShoeName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ShoeType.TypeName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ShoeColor)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ShoeSeason)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ShoeOccasion)
-        </th>    
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
+@foreach (var item in Model)
+{
+    <div class="col-md-4" style="border:dotted;">
+        <h3>
             @Html.DisplayFor(modelItem => item.ShoeName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ShoeType.TypeName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ShoeColor)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ShoeSeason)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ShoeOccasion)
-        </td>
-        <td>
-            @Html.ActionLink("Details", "Details", new { id=item.ShoeID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ShoeID })
-        </td>
-    </tr>
+        </h3>
+        <h3>
+            Type: @Html.DisplayFor(modelItem => item.ShoeType.TypeName)
+        </h3>
+        <h3>
+            Color: @Html.DisplayFor(modelItem => item.ShoeColor)
+        </h3>
+        <h3>
+            Season: @Html.DisplayFor(modelItem => item.ShoeSeason)
+        </h3>
+        <h3>
+            Occassion: @Html.DisplayFor(modelItem => item.ShoeOccasion)
+        </h3>
+        <h4>
+            @Html.ActionLink("Details", "Details", new { id = item.ShoeID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ShoeID })
+        </h4>
+    </div>
 }
 
-</table>

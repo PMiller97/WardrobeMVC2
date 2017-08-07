@@ -10,45 +10,30 @@
     <h4>Accessory</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.AccessoryName)
-        </dt>
-
         <dd>
-            @Html.DisplayFor(model => model.AccessoryName)
+            <img src="@Html.DisplayFor(model => model.AccessoryPhoto)" />
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.AccessoryType.TypeName)
-        </dt>
-
         <dd>
-            @Html.DisplayFor(model => model.AccessoryType.TypeName)
+            Name: @Html.DisplayFor(model => model.AccessoryName)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.AccessoryColor)
-        </dt>
-
         <dd>
-            @Html.DisplayFor(model => model.AccessoryColor)
+            Type: @Html.DisplayFor(model => model.AccessoryType.TypeName)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.AccessorySeason)
-        </dt>
-
         <dd>
-            @Html.DisplayFor(model => model.AccessorySeason)
+            Color: @Html.DisplayFor(model => model.AccessoryColor)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.AccessoryOccasion)
-        </dt>
+        <dd>
+            Season: @Html.DisplayFor(model => model.AccessorySeason)
+        </dd>
 
         <dd>
-            @Html.DisplayFor(model => model.AccessoryOccasion)
-        </dd>   
+            Occassion: @Html.DisplayFor(model => model.AccessoryOccasion)
+        </dd>
+  
 
     </dl>
 </div>

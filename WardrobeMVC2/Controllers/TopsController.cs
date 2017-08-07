@@ -53,31 +53,35 @@ namespace WardrobeMVC2.Controllers
             if (ModelState.IsValid)
             {
                 /*Got this code from Pete, but I could not get it to work myself. Too many failed attempts, and the code would show up on the view instead of the picture for some reason.*/
-                if (top.TopTypeID.Equals(1))
+                /*if (top.TopTypeID.Equals(1))
                 {
-                    top.TopPhoto = "/Content/rsz_rhcpshirt.png";
+                    top.TopPhoto = "~/Content/rsz_rhcpshirt.png";
                 }
                 if (top.TopTypeID.Equals(2))
                 {
-                    top.TopPhoto = "/Content/rsz_maroonvneck.png";
+                    top.TopPhoto = "~/Content/rsz_maroonvneck.png";
                 }
                 if (top.TopTypeID.Equals(3))
                 {
-                    top.TopPhoto = "/Content/rsz_graytanktop.png";
+                    top.TopPhoto = "~/Content/rsz_graytanktop.png";
                 }
                 if (top.TopTypeID.Equals(4))
                 {
-                    top.TopPhoto = "/Content/rsz_moonphases.png";
+                    top.TopPhoto = "~/Content/rsz_moonphases.png";
                 }
                 if (top.TopTypeID.Equals(5))
                 {
-                    top.TopPhoto = "/Content/rsz_linkinparkhoodie.png";
+                    top.TopPhoto = "~/Content/rsz_linkinparkhoodie.png";
                 }
                 if (top.TopTypeID.Equals(6))
                 {
-                    top.TopPhoto = "/Content/rsz_favoriteflannel.png";
+                    top.TopPhoto = "~/Content/rsz_favoriteflannel.png";
                 }
-                
+                else
+                {
+                    top.TopPhoto = "~/Content/rsz_zeldaleggings.png";
+                }*/
+
                 db.Tops.Add(top);
                 db.SaveChanges();
                 return RedirectToAction("Index");

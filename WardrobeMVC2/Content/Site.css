@@ -11,6 +11,7 @@
     padding-right: 15px;
     background-color:aqua;
     font-family: 'Anton', sans-serif;
+    text-align:center;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -36,4 +37,5 @@ textarea {
 .Lead {
     text-align:center;
 }
+
 

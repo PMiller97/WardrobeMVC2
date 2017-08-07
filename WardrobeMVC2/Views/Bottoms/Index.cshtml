@@ -6,48 +6,27 @@
 
 <h2>Paiges Bottoms ~</h2>
 
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.BottomName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BottomType.TypeName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BottomColor)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BottomSeason)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BottomOccasion)
-        </th>     
-        <th></th>
-    </tr>
-
 @foreach (var item in Model) {
-    <tr>
-        <td>
+    <div class="col-md-4" style="border:dotted;">
+        <h3>
             @Html.DisplayFor(modelItem => item.BottomName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BottomType.TypeName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BottomColor)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BottomSeason)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BottomOccasion)
-        </td>    
-        <td>
+        </h3>
+        <h3>
+            Type: @Html.DisplayFor(modelItem => item.BottomType.TypeName)
+        </h3>
+        <h3>
+            Color: @Html.DisplayFor(modelItem => item.BottomColor)
+        </h3>
+        <h3>
+            Season: @Html.DisplayFor(modelItem => item.BottomSeason)
+        </h3>
+        <h3>
+            Occassion: @Html.DisplayFor(modelItem => item.BottomOccasion)
+        </h3>    
+        <h4>
             @Html.ActionLink("Details", "Details", new { id=item.BottomID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.BottomID })
-        </td>
-    </tr>
+        </h4>
+    </div>
 }
 
-</table>

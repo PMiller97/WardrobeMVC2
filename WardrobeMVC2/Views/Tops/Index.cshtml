@@ -5,49 +5,29 @@
 }
 
 <h2>Paiges Shirts ~</h2>
-
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.TopName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TopType.TypeName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TopColor)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TopSeason)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TopOccasion)
-        </th>     
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
+@*Changed all of this to DIV so that i could have columns and took out the first table so the TOPNAME..etc. wont show*@
+@foreach (var item in Model)
+{
+    <div class="col-md-4" style="border:dotted;">
+        <h3>
             @Html.DisplayFor(modelItem => item.TopName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopType.TypeName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopColor)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopSeason)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopOccasion)
-        </td>       
-        <td>
-            @Html.ActionLink("Details", "Details", new { id=item.TopID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.TopID })
-        </td>
-    </tr>
+        </h3>
+        <h3>
+            Type: @Html.DisplayFor(modelItem => item.TopType.TypeName)
+        </h3>
+        <h3>
+            Color: @Html.DisplayFor(modelItem => item.TopColor)
+        </h3>
+        <h3>
+            Season: @Html.DisplayFor(modelItem => item.TopSeason)
+        </h3>
+        <h3>
+            Occasion: @Html.DisplayFor(modelItem => item.TopOccasion)
+        </h3>
+        <h4>
+            @Html.ActionLink("Details", "Details", new { id = item.TopID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.TopID })
+        </h4>
+    </div>
 }
 
-</table>

@@ -11,49 +11,31 @@
     <hr />
     <dl class="dl-horizontal">
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TopName)
-        </dt>
+        <dd>
+            <img src="@Html.DisplayFor(model => model.TopPhoto)" /> @*WHY WONT MY PICTURES WORK I HAVE NO IDEA!!!!!!!!!*@
+        </dd>
 
         <dd>
-            @Html.DisplayFor(model => model.TopName)
+            Name: @Html.DisplayFor(model => model.TopName)
         </dd>  
 
         <dd>
-            @Html.DisplayFor(model => model.TopPhoto)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TopColor)
-        </dt>
+            Type: @Html.DisplayFor(model => model.TopType.TypeName)
+        </dd>   
 
         <dd>
-            @Html.DisplayFor(model => model.TopColor)
+            Color: @Html.DisplayFor(model => model.TopColor)
         </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TopSeason)
-        </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.TopSeason)
+            Season: @Html.DisplayFor(model => model.TopSeason)
         </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TopOccasion)
-        </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.TopOccasion)
+            Occassion: @Html.DisplayFor(model => model.TopOccasion)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TopType.TypeName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TopType.TypeName)
-        </dd>
+     
 
     </dl>
 </div>
